@@ -1,0 +1,11 @@
+#include <stdio.h>
+int minimo=0;
+int massimo=100;
+int quanti=20;
+int main() {
+    srand(time(NULL)); 
+    for(int i=0;i<quanti;i++){
+    int caso = rand() % (massimo + 1 - minimo) + minimo;
+    printf("%i\n",caso); }
+	return 0;
+}
